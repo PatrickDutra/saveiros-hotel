@@ -8,68 +8,83 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <style>
     .swiper-pagination-bullet-active {
-      background: #1e40af; /* azul-800 do Tailwind */
+      background: #1e40af;
     }
   </style>
 </head>
 <body class="bg-white text-gray-800 font-sans">
+
   <!-- Header -->
   <header class="bg-blue-800 text-white py-4">
     <div class="container mx-auto flex justify-between items-center px-4">
       <h1 class="text-2xl font-bold">Saveiros Hotel</h1>
       <nav>
         <ul class="flex space-x-4">
-            <li>
-              <a href="index.html" class="px-3 py-1 rounded-md transition hover:bg-white hover:text-blue-800 border border-transparent hover:border-white">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="sobre.html" class="px-3 py-1 rounded-md transition hover:bg-white hover:text-blue-800 border border-transparent hover:border-white">
-                Sobre o Hotel
-              </a>
-            </li>
-            <li>
-              <a href="acomodacoes.html" class="px-3 py-1 rounded-md transition hover:bg-white hover:text-blue-800 border border-transparent hover:border-white">
-                Acomodações
-              </a>
-            </li>
-            <li>
-              <a href="marataizes.html" class="px-3 py-1 rounded-md transition hover:bg-white hover:text-blue-800 border border-transparent hover:border-white">
-                Sobre Marataízes
-              </a>
-            </li>
-            <li>
-              <a href="contato.html" class="px-3 py-1 rounded-md transition hover:bg-white hover:text-blue-800 border border-transparent hover:border-white">
-                Fale Conosco
-              </a>
-            </li>
-          </ul>
-          
+          <li><a href="index.html" class="px-3 py-1 rounded-md transition hover:bg-white hover:text-blue-800 border border-transparent hover:border-white">Home</a></li>
+          <li><a href="sobre.html" class="px-3 py-1 rounded-md transition hover:bg-white hover:text-blue-800 border border-transparent hover:border-white">Sobre o Hotel</a></li>
+          <li><a href="acomodacoes.html" class="px-3 py-1 rounded-md transition hover:bg-white hover:text-blue-800 border border-transparent hover:border-white">Acomodações</a></li>
+          <li><a href="marataizes.html" class="px-3 py-1 rounded-md transition hover:bg-white hover:text-blue-800 border border-transparent hover:border-white">Sobre Marataízes</a></li>
+          <li><a href="contato.html" class="px-3 py-1 rounded-md transition hover:bg-white hover:text-blue-800 border border-transparent hover:border-white">Fale Conosco</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Acomodação única com carrossel -->
+  <!-- Conteúdo -->
   <section class="py-12 px-4">
     <div class="container mx-auto max-w-4xl">
       <h2 class="text-3xl font-semibold mb-6 text-center">Nossa Acomodação</h2>
 
-      <!-- Swiper -->
+      <!-- Swiper - Carrossel de Imagens -->
       <div class="swiper rounded overflow-hidden shadow mb-6">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="img/quarto1.jpg" alt="Foto 1" class="w-full h-64 object-cover"></div>
-          <div class="swiper-slide"><img src="img/quarto2.jpg" alt="Foto 2" class="w-full h-64 object-cover"></div>
-          <div class="swiper-slide"><img src="img/quarto3.jpg" alt="Foto 3" class="w-full h-64 object-cover"></div>
+          <div class="swiper-slide"><img src="img/quarto1.jpg" alt="Foto 1" class="w-full h-96 object-cover rounded-lg"></div>
+          <div class="swiper-slide"><img src="img/quarto2.jpg" alt="Foto 1" class="w-full h-96 object-cover rounded-lg"></div>
+          <div class="swiper-slide"><img src="img/quarto3.jpg" alt="Foto 1" class="w-full h-96 object-cover rounded-lg"></div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
 
-      <div class="text-center">
+      <!-- Texto descritivo -->
+      <div class="text-center mb-10">
         <h3 class="text-xl font-semibold mb-2">Suíte Conforto</h3>
         <p class="text-sm max-w-xl mx-auto">
           Nossa suíte padrão conta com cama de casal, ar-condicionado, TV, frigobar e Wi-Fi gratuito. Ideal para casais ou viajantes individuais que buscam conforto, tranquilidade e ótima localização.
         </p>
+      </div>
+
+      <!-- Tipos de Acomodações -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+        <!-- Suíte -->
+        <div class="bg-gray-100 p-4 rounded shadow">
+          <h4 class="font-semibold text-blue-800 mb-2">Suíte</h4>
+          <ul class="list-disc list-inside">
+            <li>Até 4 hóspedes</li>
+            <li>Ar-condicionado</li>
+            <li>TV, frigobar e telefone</li>
+          </ul>
+        </div>
+
+        <!-- Standard -->
+        <div class="bg-gray-100 p-4 rounded shadow">
+          <h4 class="font-semibold text-blue-800 mb-2">Standard</h4>
+          <ul class="list-disc list-inside">
+            <li>Até 3 hóspedes</li>
+            <li>TV, frigobar, ventilador</li>
+            <li>Telefone</li>
+          </ul>
+        </div>
+
+        <!-- Apart Hotel -->
+        <div class="bg-gray-100 p-4 rounded shadow">
+          <h4 class="font-semibold text-blue-800 mb-2">Apart Hotel</h4>
+          <ul class="list-disc list-inside">
+            <li>Até 6 hóspedes</li>
+            <li>2 quartos, sala</li>
+            <li>Cozinha c/ geladeira</li>
+            <li>Ventilador de teto, TV, telefone</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -78,8 +93,29 @@
   <footer class="bg-blue-800 text-white py-4 mt-12">
     <div class="container mx-auto text-center px-4">
       <p>&copy; 2025 Saveiros Hotel - Marataízes, ES</p>
+      <p>Avenida Miramar, 119, Centro, contato@saveirospalacehotel.com.br (28) 3532-1413</p>
     </div>
   </footer>
+<!-- Redes sociais -->
+<div class="flex justify-center gap-4 mt-4">
+  <a href="https://www.instagram.com/saveiroshoteles" target="_blank" class="hover:text-blue-300">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .3 2.5.5.6.2 1 .5 1.5 1 .5.5.8.9 1 1.5.2.5.4 1.3.5 2.5.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 2-.5 2.5-.2.6-.5 1-1 1.5-.5.5-.9.8-1.5 1-.5.2-1.3.4-2.5.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.3-2.5-.5-.6-.2-1-.5-1.5-1-.5-.5-.8-.9-1-1.5-.2-.5-.4-1.3-.5-2.5C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-2 .5-2.5.2-.6.5-1 1-1.5.5-.5.9-.8 1.5-1 .5-.2 1.3-.4 2.5-.5C8.4 2.2 8.8 2.2 12 2.2m0-2.2C8.7 0 8.2 0 6.9.1 5.5.2 4.2.5 3.1.9 2.1 1.3 1.3 2.1.9 3.1.5 4.2.2 5.5.1 6.9 0 8.2 0 8.7 0 12c0 3.3 0 3.8.1 5.1.1 1.4.4 2.7.8 3.8.4 1 1.2 1.8 2.2 2.2 1.1.4 2.4.7 3.8.8 1.3.1 1.8.1 5.1.1s3.8 0 5.1-.1c1.4-.1 2.7-.4 3.8-.8 1-.4 1.8-1.2 2.2-2.2.4-1.1.7-2.4.8-3.8.1-1.3.1-1.8.1-5.1s0-3.8-.1-5.1c-.1-1.4-.4-2.7-.8-3.8-.4-1-1.2-1.8-2.2-2.2-1.1-.4-2.4-.7-3.8-.8C15.8 0 15.3 0 12 0z" /><path d="M12 5.8a6.2 6.2 0 100 12.4 6.2 6.2 0 000-12.4zm0 10.2a4 4 0 110-8 4 4 0 010 8zM18.4 4.6a1.4 1.4 0 11-2.8 0 1.4 1.4 0 012.8 0z"/>
+    </svg>
+  </a>
+
+  <a href="https://www.facebook.com/saveiroshoteles" target="_blank" class="hover:text-blue-300">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M22.676 0H1.326C.593 0 0 .593 0 1.326v21.348C0 23.407.593 24 1.326 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.762v2.31h3.587l-.467 3.622h-3.12V24h6.116C23.407 24 24 23.407 24 22.674V1.326C24 .593 23.407 0 22.676 0"/>
+    </svg>
+  </a>
+
+  <a href="https://wa.me/552835321413" target="_blank" class="hover:text-blue-300">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 32 32" fill="currentColor">
+      <path d="M16 .005C7.164.005.003 7.167.003 16.003c0 2.813.734 5.586 2.133 8.014L.083 32l8.188-2.133a15.883 15.883 0 007.73 1.972h.006c8.84 0 16.002-7.162 16.002-16S24.84.005 16 .005zm0 29.363c-2.473 0-4.888-.662-7.01-1.917l-.504-.296-4.86 1.267 1.298-4.737-.326-.518a13.3 13.3 0 01-2.012-7.054c0-7.375 6.004-13.38 13.382-13.38 3.574 0 6.933 1.393 9.46 3.921a13.21 13.21 0 013.922 9.459c0 7.378-6.005 13.384-13.38 13.384zm7.63-9.547c-.418-.21-2.474-1.222-2.858-1.36-.384-.14-.664-.21-.944.211-.281.418-1.08 1.36-1.324 1.641-.245.28-.49.315-.908.105-.418-.21-1.76-.648-3.356-2.066-1.241-1.107-2.08-2.47-2.325-2.89-.245-.42-.026-.648.184-.858.189-.19.42-.49.631-.735.21-.245.28-.42.42-.7.14-.28.07-.525-.035-.735-.105-.21-.944-2.284-1.294-3.13-.34-.818-.688-.708-.944-.72l-.8-.014c-.28 0-.735.105-1.12.525s-1.47 1.437-1.47 3.504 1.505 4.066 1.715 4.351c.21.28 2.97 4.52 7.197 6.33.822.355 1.463.566 1.96.723.823.26 1.572.223 2.164.135.66-.098 2.023-.826 2.31-1.623.287-.798.287-1.482.2-1.623-.084-.14-.308-.223-.645-.384z"/>
+    </svg>
+  </a>
+</div>
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
