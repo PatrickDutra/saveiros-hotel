@@ -1,21 +1,17 @@
-<!-- marataizes.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sobre Marataízes - Saveiros Hotel</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-<script defer>
-  function toggleMenu() {
-    const menu = document.getElementById('mobile-menu');
-    menu.classList.toggle('hidden');
-  }
-</script>
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <script defer>
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
 </head>
 <body class="bg-slate-100 text-gray-800 font-sans">
   <!-- Header -->
@@ -52,42 +48,58 @@
       </ul>
     </div>
   </header>
-  
 
-  <!-- Conteúdo -->
+  <!-- Conteúdo principal -->
   <section class="py-12 px-4">
-    <div class="container mx-auto max-w-4xl">
-      <h2 class="text-3xl font-semibold mb-6 text-center">Conheça Marataízes</h2>
-      <p class="mb-6 text-lg text-center">
-        Marataízes é um dos destinos mais procurados do litoral capixaba. Com praias paradisíacas, lagoas e pontos históricos, a cidade oferece opções para quem busca lazer, natureza e cultura.
+    <div class="container mx-auto max-w-4xl text-center">
+      <h1 class="text-3xl font-semibold mb-6">Descubra Marataízes</h1>
+      <p class="text-lg text-gray-700 leading-relaxed">
+        Marataízes é um verdadeiro paraíso capixaba, com praias deslumbrantes, lagoas de águas calmas e falésias encantadoras. Localizada no litoral sul do Espírito Santo, a cidade atrai visitantes o ano inteiro por sua beleza natural, clima acolhedor e gastronomia típica. Seja para relaxar, curtir as férias ou explorar as belezas locais, Marataízes oferece experiências inesquecíveis.
       </p>
+    </div>
+  </section>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-gray-100 p-4 rounded shadow">
-          <h3 class="text-xl font-semibold mb-2">🏖️ Praia Central</h3>
-          <p>A principal praia da cidade, com calçadão, quiosques e ótima estrutura para famílias e banhistas.</p>
+  <!-- Destaques turísticos -->
+  <section class="bg-white py-12 px-4">
+    <div class="container mx-auto max-w-6xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-slate-100 rounded overflow-hidden shadow">
+          <img src="img/praia-central.jpg" alt="Praia Central" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Praia Central</h3>
+            <p class="text-sm">A mais famosa de Marataízes, perfeita para banho de mar, passeios e curtir o pôr do sol.</p>
+          </div>
         </div>
-        <div class="bg-gray-100 p-4 rounded shadow">
-          <h3 class="text-xl font-semibold mb-2">🌅 Lagoa do Siri</h3>
-          <p>Cartão postal de Marataízes, a Lagoa do Siri é perfeita para banho, caiaque e lazer em família.</p>
+        <div class="bg-slate-100 rounded overflow-hidden shadow">
+          <img src="img/lagoa-do-siri.jpg" alt="Lagoa do Siri" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Lagoa do Siri</h3>
+            <p class="text-sm">Ideal para famílias, com águas tranquilas, quiosques e muito verde ao redor.</p>
+          </div>
         </div>
-        <div class="bg-gray-100 p-4 rounded shadow">
-          <h3 class="text-xl font-semibold mb-2">⚓ Trapiche</h3>
-          <p>Um dos pontos mais tradicionais para apreciar o pôr do sol e caminhar à beira-mar com vista para os barcos.</p>
+        <div class="bg-slate-100 rounded overflow-hidden shadow">
+          <img src="img/falesias.jpg" alt="Falésias" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Falésias</h3>
+            <p class="text-sm">Formações rochosas coloridas que criam paisagens incríveis e únicas na região.</p>
+          </div>
         </div>
-        <div class="bg-gray-100 p-4 rounded shadow">
-          <h3 class="text-xl font-semibold mb-2">🌴 Ilha das Pacas</h3>
-          <p>Pequena ilha de águas tranquilas, ideal para passeios de barco e fotos incríveis.</p>
+        <div class="bg-slate-100 rounded overflow-hidden shadow">
+          <img src="img/trapiche.jpg" alt="Trapiche" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Trapiche</h3>
+            <p class="text-sm">Um dos cartões-postais da cidade, ideal para caminhadas e fotos incríveis à beira-mar.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-blue-800 text-white py-4 mt-12">
+  <footer class="bg-blue-900 text-white py-4 mt-12">
     <div class="container mx-auto text-center px-4">
-        <p>&copy; 2025 Saveiros Hotel - Marataízes, ES</p>
-        <p>Avenida Miramar, 119, Centro, contato@saveirospalacehotel.com.br (28) 3532-1413</p>>
+      <p>&copy; 2025 Saveiros Hotel - Marataízes, ES</p>
+      <p>Avenida Miramar, 119, Centro | contato@saveirospalacehotel.com.br | (28) 3532-1413</p>
     </div>
   </footer>
 </body>
