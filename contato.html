@@ -1,0 +1,64 @@
+<!-- contato.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fale Conosco - Saveiros Hotel</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+</head>
+<body class="bg-white text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="bg-blue-800 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <h1 class="text-2xl font-bold">Saveiros Hotel</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="index.html" class="hover:underline">Home</a></li>
+          <li><a href="sobre.html" class="hover:underline">Sobre o Hotel</a></li>
+          <li><a href="marataizes.html" class="hover:underline">Sobre Marataízes</a></li>
+          <li><a href="contato.html" class="hover:underline">Fale Conosco</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Formulário de Contato -->
+  <section class="py-12 px-4">
+    <div class="container mx-auto max-w-xl">
+      <h2 class="text-3xl font-semibold mb-6 text-center">Fale Conosco</h2>
+      <form action="https://formsubmit.co/patrickdutrasb@gmail.com" method="POST"        class="bg-gray-100 p-6 rounded shadow">
+        <div class="mb-4">
+          <label class="block mb-1 font-medium">Nome</label>
+          <input type="text" name="nome" required class="w-full p-2 border rounded" />
+        </div>
+        <div class="mb-4">
+          <label class="block mb-1 font-medium">E-mail</label>
+          <input type="email" name="email" required class="w-full p-2 border rounded" />
+        </div>
+        <div class="mb-4">
+          <label class="block mb-1 font-medium">Mensagem</label>
+          <textarea name="mensagem" rows="4" required class="w-full p-2 border rounded"></textarea>
+        </div>
+        <!-- Anti-spam do Formsubmit -->
+        <input type="hidden" name="_captcha" value="false">
+        <button type="submit" class="bg-blue-800 text-white py-2 px-6 rounded hover:bg-blue-700 transition">Enviar</button>
+      </form>
+
+      <div class="mt-8 text-center">
+        <p class="mb-2">Ou entre em contato diretamente:</p>
+        <p><a href="https://wa.me/seunumero" class="text-blue-800 hover:underline">WhatsApp</a></p>
+        <p><a href="https://instagram.com/seuinstagram" class="text-blue-800 hover:underline">Instagram</a></p>
+        <p><a href="https://facebook.com/seufacebook" class="text-blue-800 hover:underline">Facebook</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white py-4 mt-12">
+    <div class="container mx-auto text-center px-4">
+      <p>&copy; 2025 Saveiros Hotel - Marataízes, ES</p>
+    </div>
+  </footer>
+</body>
+</html>
