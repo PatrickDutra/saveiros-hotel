@@ -1,0 +1,24 @@
+# 🌴 Saveiros Hotel - Site Institucional
+
+Site institucional simples e responsivo para o Saveiros Hotel, localizado em Marataízes - ES.  
+Desenvolvido com HTML5, Tailwind CSS e JavaScript puro.
+
+---
+
+## 📌 Páginas
+
+- `index.html` – Página inicial com destaques do hotel
+- `sobre.html` – Informações sobre o hotel
+- `marataizes.html` – Pontos turísticos de Marataízes
+- `contato.html` – Formulário de contato + links úteis
+
+---
+
+## 💡 Tecnologias Utilizadas
+
+- HTML5
+- Tailwind CSS (CDN)
+- JavaScript (formulário, interação futura)
+- FormSubmit (para envio de mensagens sem backend)
+
+
