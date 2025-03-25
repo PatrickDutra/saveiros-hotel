@@ -1,11 +1,16 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saveiros Hotel - Marataízes</title>
+  <title>Acomodações - Saveiros Hotel</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <style>
+    .swiper-pagination-bullet-active {
+      background: #1e40af; /* azul-800 do Tailwind */
+    }
+  </style>
 </head>
 <body class="bg-white text-gray-800 font-sans">
   <!-- Header -->
@@ -41,29 +46,30 @@
             </li>
           </ul>
           
-          
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="bg-blue-100 py-12 text-center">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-semibold mb-4">Seu refúgio à beira-mar em Marataízes</h2>
-      <p class="text-lg mb-6">Conforto, tranquilidade e ótima localização para sua estadia.</p>
-      <a href="contato.html" class="bg-blue-800 text-white py-2 px-6 rounded hover:bg-blue-700 transition">Entre em contato</a>
-    </div>
-  </section>
+  <!-- Acomodação única com carrossel -->
+  <section class="py-12 px-4">
+    <div class="container mx-auto max-w-4xl">
+      <h2 class="text-3xl font-semibold mb-6 text-center">Nossa Acomodação</h2>
 
-  <!-- Destaques -->
-  <section class="py-12">
-    <div class="container mx-auto px-4 text-center">
-      <h3 class="text-2xl font-semibold mb-6">Por que escolher o Saveiros Hotel?</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="bg-gray-100 p-4 rounded shadow">Localização privilegiada</div>
-        <div class="bg-gray-100 p-4 rounded shadow">Ambiente familiar</div>
-        <div class="bg-gray-100 p-4 rounded shadow">Suítes confortáveis</div>
-        <div class="bg-gray-100 p-4 rounded shadow">Atendimento de qualidade</div>
+      <!-- Swiper -->
+      <div class="swiper rounded overflow-hidden shadow mb-6">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/quarto1.jpg" alt="Foto 1" class="w-full h-64 object-cover"></div>
+          <div class="swiper-slide"><img src="img/quarto2.jpg" alt="Foto 2" class="w-full h-64 object-cover"></div>
+          <div class="swiper-slide"><img src="img/quarto3.jpg" alt="Foto 3" class="w-full h-64 object-cover"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="text-center">
+        <h3 class="text-xl font-semibold mb-2">Suíte Conforto</h3>
+        <p class="text-sm max-w-xl mx-auto">
+          Nossa suíte padrão conta com cama de casal, ar-condicionado, TV, frigobar e Wi-Fi gratuito. Ideal para casais ou viajantes individuais que buscam conforto, tranquilidade e ótima localização.
+        </p>
       </div>
     </div>
   </section>
@@ -72,10 +78,19 @@
   <footer class="bg-blue-800 text-white py-4 mt-12">
     <div class="container mx-auto text-center px-4">
       <p>&copy; 2025 Saveiros Hotel - Marataízes, ES</p>
-      <p>Avenida Miramar, 119, Centro, contato@saveirospalacehotel.com.br (28) 3532-1413</p>
     </div>
   </footer>
 
-  <script src="js/script.js"></script>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
 </body>
 </html>
